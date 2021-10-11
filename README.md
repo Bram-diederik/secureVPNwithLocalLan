@@ -5,9 +5,9 @@ two Machines are uses to create this setup. VpnGateway and incomingVpnServer.
 
 # Setup VpnGateway
 for this you require an VPN hosting using openvpn
-place working openvpn configurations in /etc/openvpn/clientConfig 
-copy up.sh and down.sh to /etc/openvpn/
-apply
+1) place working openvpn configurations in /etc/openvpn/clientConfig 
+2)copy up.sh and down.sh to /etc/openvpn/
+3) apply
 ```
 script-security 3 
 route-up /etc/openvpn/up.sh
@@ -15,19 +15,19 @@ down /etc/openvpn/down.sh
 ```
 to every openvpn configuration in clientConfig. 
 
-install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
+4) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
 
-copy /etc/rsyslog.d/openvpn.conf
+5) copy /etc/rsyslog.d/openvpn.conf
 
-copy the php site.
+6) copy the php site.
 
 
 
 # Setup incomingVpnServer
-install a openvpn server. I recommend use a script like https://www.pivpn.io/
+1) install a openvpn server. I recommend use a script like https://www.pivpn.io/
 
-copy the up.sh script to /etc/openvpn/
-apply
+2) copy the up.sh script to /etc/openvpn/
+3) apply
 ```
 script-security 3 
 up /etc/openvpn/up.sh
