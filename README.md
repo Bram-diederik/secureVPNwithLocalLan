@@ -3,7 +3,16 @@ This git is for users who want a VPN Connection to their home network. With a se
 
 two Machines are uses to create this setup. VpnGateway and incomingVpnServer.
 
-The routing inteligence is the following IPTABLE rule
+The routing inteligence is the following IPTABLE rule:
+```
+iptables -A FORWARD -i tun0 -j ACCEPT 
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE 
+ip route add 10.8.0.0/24 dev tun0 table 11
+ip route add default via VpnGateway dev eth0 table 11
+ip rule add from 10.8.0.0/24 table 11
+ip rule add to 10.8.0.0/24 table 11
+
+```
 
 # Setup VpnGateway
 for this you require an VPN hosting using openvpn
