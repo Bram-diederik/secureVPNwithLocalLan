@@ -1,5 +1,6 @@
 # Secure VPN With Local Lan
 This git is for users who want a VPN Connection to their home network. With a secure VPN Connection to the internet. 
+Somewhere -> VPN -> Localnetwork -> VPN -> Some anonymous gateway.
 
 two Machines are uses to create this setup. VpnGateway and incomingVpnServer.
 
