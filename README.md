@@ -11,7 +11,6 @@ ip route add 10.8.0.0/24 dev tun0 table 11
 ip route add default via VpnGateway dev eth0 table 11
 ip rule add from 10.8.0.0/24 table 11
 ip rule add to 10.8.0.0/24 table 11
-
 ```
 
 # Setup VpnGateway
