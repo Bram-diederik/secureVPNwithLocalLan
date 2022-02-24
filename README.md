@@ -2,7 +2,7 @@
 This git is for users who want a VPN Connection to their home network. With a secure VPN Connection to the internet. 
 
 Somewhere -> VPN -> Localnetwork -> VPN -> Some anonymous gateway.
-![](./images/vpnOverview.png)
+![](./images/vpnMap.png)
 
 I wrote a very rudimental but working web interface to select diffrent VPN Gateway Connections
 ![](./images/vpnPhpClient.png)
