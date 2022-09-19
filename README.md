@@ -8,7 +8,7 @@ This is Both.
 This git describes and utilizes a VPN Connection to a home network with a secure VPN Connection to the internet. 
 
 Somewhere -> VPN -> Localnetwork -> VPN -> Some anonymous gateway.
-![](./images/vpnMap.png)
+![](./images/vpnMap.drawio.png)
 
 I wrote a very rudimental but working web interface to select diffrent VPN Gateway Connections
 ![](./images/vpnPhpClient.png)
