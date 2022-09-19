@@ -1,42 +1,88 @@
-<mxfile host="app.diagrams.net" modified="2022-02-24T20:21:01.599Z" agent="5.0 (X11)" etag="acI-OD44-TuajlImD0y9" version="16.6.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-19T19:56:40.496Z" agent="5.0 (X11)" etag="guuKf-svVIIWCQA8rRoT" version="17.4.6" type="github">
   <diagram id="aNHu1ySQU43lHUJdWZu7" name="Page-1">
-    <mxGraphModel dx="1400" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="291" math="0" shadow="0">
+    <mxGraphModel dx="813" dy="427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="291" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-1" value="Internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8ExyoGv-klVvdCd_kYWT-1" value="Internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="140" width="405" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ExyoGv-klVvdCd_kYWT-2" target="8ExyoGv-klVvdCd_kYWT-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="403" y="300" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="31aA5t41ttmXgowBfLKb-16" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="605" y="230" width="165" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-2" value="&lt;div&gt;Client&lt;/div&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
-          <mxGeometry x="160" y="250" width="45" height="50" as="geometry" />
+        <mxCell id="31aA5t41ttmXgowBfLKb-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="263.75" y="377" width="277.5" height="203" as="geometry" />
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-4" value="Home network" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
-          <mxGeometry x="381.2" y="390" width="42.599999999999994" height="54" as="geometry" />
+        <mxCell id="31aA5t41ttmXgowBfLKb-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="133.75" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-6" value="vpn gateway" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" vertex="1" parent="1">
-          <mxGeometry x="605" y="260" width="53.87" height="70" as="geometry" />
+        <mxCell id="31aA5t41ttmXgowBfLKb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8ExyoGv-klVvdCd_kYWT-2" target="31aA5t41ttmXgowBfLKb-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-18" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;exitX=0.664;exitY=-0.093;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8ExyoGv-klVvdCd_kYWT-4" target="8ExyoGv-klVvdCd_kYWT-6">
+        <mxCell id="8ExyoGv-klVvdCd_kYWT-2" value="&lt;div&gt;Client&lt;/div&gt;" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
+          <mxGeometry x="130" y="250" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8ExyoGv-klVvdCd_kYWT-6" value="anonymous vpn endpoint" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;" parent="1" vertex="1">
+          <mxGeometry x="660" y="260" width="53.87" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8ExyoGv-klVvdCd_kYWT-18" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;" parent="1" target="8ExyoGv-klVvdCd_kYWT-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="430" y="440" as="sourcePoint" />
+            <mxPoint x="460" y="415" as="sourcePoint" />
             <mxPoint x="580" y="300" as="targetPoint" />
             <Array as="points">
+              <mxPoint x="480" y="300" />
+              <mxPoint x="470" y="300" />
+              <mxPoint x="440" y="300" />
+              <mxPoint x="430" y="300" />
+              <mxPoint x="420" y="300" />
               <mxPoint x="500" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8ExyoGv-klVvdCd_kYWT-19" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;exitX=-0.074;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8ExyoGv-klVvdCd_kYWT-6">
+        <mxCell id="8ExyoGv-klVvdCd_kYWT-19" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;exitX=-0.074;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="8ExyoGv-klVvdCd_kYWT-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="440" as="sourcePoint" />
             <mxPoint x="490" y="285" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.03;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="31aA5t41ttmXgowBfLKb-1" target="31aA5t41ttmXgowBfLKb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.024;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=7;startArrow=none;exitX=1.03;exitY=0.939;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="31aA5t41ttmXgowBfLKb-1" target="31aA5t41ttmXgowBfLKb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="471" />
+              <mxPoint x="430" y="520" />
+              <mxPoint x="441" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-1" value="vpnIN" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+          <mxGeometry x="330" y="420" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-2" value="&lt;div&gt;vpnOut&lt;/div&gt;" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="1">
+          <mxGeometry x="440" y="420" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-5" value="&lt;font style=&quot;font-size: 7px&quot;&gt;Default gateway&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=5;" vertex="1" parent="1">
+          <mxGeometry x="372.6" y="440" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-7" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/storage/Datacenter_Server_Half_Rack_ToR.svg;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="442.06" y="500" width="38.48" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-9" value="&lt;div&gt;local Lan&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="372.5" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-11" value="&lt;div&gt;Other servers&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="432.6" y="550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-13" value="Local Network" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="263.75" y="377" width="86.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-15" value="Somewhere anywhere" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31aA5t41ttmXgowBfLKb-17" value="some server of your (payed) VPN provider" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="605" y="230" width="135" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
