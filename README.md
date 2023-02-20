@@ -17,7 +17,6 @@ Better use Home assistant to get information.
 
 ![](./images/HA.png)
 
-
 two Machines are uses to create this setup. VpnGateway and incomingVpnServer.
 
 The routing inteligence is the following Iptable/IP rule:
