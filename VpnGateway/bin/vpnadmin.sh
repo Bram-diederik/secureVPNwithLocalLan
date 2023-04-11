@@ -97,7 +97,7 @@ if [ "$1" = "start" ];
      date +"%b %d %T `hostname` vpnadmin: Forwaring stopped" >> /var/log/openvpn/ovpn.log
      service openvpn stop
      ipdisable
-   elif [ "stop-route-local" = $2 ];
+   elif [ "$2" = "stop-route-local" ];
    then
       date +"%b %d %T `hostname` vpnadmin: Local routing started" >> /var/log/openvpn/ovpn.log
       service openvpn stop
@@ -128,16 +128,17 @@ if [ "$1" = "start" ];
 fi
 if [ "$1" = "stop" ]; 
   then
+echo "stopping"
     if [ -z "$2" ];
     then 
        date +"%b %d %T `hostname` vpnadmin: Forwaring stopped" >> /var/log/openvpn/ovpn.log
-       service openvpn stop
+       service openvpn@client stop
        ipdisable
     else
       if [ "route-local" = $2 ];
            then
              date +"%b %d %T `hostname` vpnadmin: Local routing started" >> /var/log/openvpn/ovpn.log
-	     service openvpn stop
+	     service openvpn@client stop
              ipenable
            fi
      fi
@@ -162,7 +163,7 @@ then
             if [ " ping -c 1 `ip -4 addr show $tun | grep -oP '(?<=inet\s)\d+(\.\d+){3}'` " ];
             then 
               conf2=${conf::-5}
-              echo "true"
+              echo "True"
               echo "location:$conf2";
               echo "icon:mdi:lan-connect"
 	      ip=`curl icanhazip.com 2> /dev/null`
@@ -170,7 +171,7 @@ then
 	      list_connections
               break
            else 
-            echo "false"
+            echo "False"
             echo "location:null"
             echo "icon:mdi:lan-disconnect"
             echo ip_address:null
@@ -179,11 +180,10 @@ then
           fi
         done
    else
-      echo "false"
+      echo "False"
       echo "location:null"
       echo "icon:mdi:lan-disconnect"
       echo ip_address:null
       list_connections
    fi
 fi
-
