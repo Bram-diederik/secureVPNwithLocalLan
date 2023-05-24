@@ -10,7 +10,7 @@ This git describes and utilizes a VPN Connection to a home network with a secure
 Somewhere -> VPN -> Localnetwork -> VPN -> Some anonymous gateway.
 ![](./images/vpnMap.drawio.png)
 
-I wrote a very rudimental but working web interface to select diffrent VPN Gateway Connections
+I wrrote a very rudimental but working web interface to select diffrent VPN Gateway Connections
 ![](./images/vpnPhpClient.png)
 
 Better use Home assistant to get information.
@@ -31,7 +31,7 @@ ip rule add to 10.8.0.0/24 table 11
 
 # Setup VpnGateway
 for this you require an VPN hosting using openvpn
-1) place working a working not asking for password openvpn configurations in the folder /etc/openvpn/clientConfig 
+1) place working not asking for password openvpn configurations in the folder /etc/openvpn/clientConfig 
 2) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
 3) copy /etc/rsyslog.d/openvpn.conf
 4) install a webserver
@@ -39,7 +39,7 @@ for this you require an VPN hosting using openvpn
 
 
 # Setup incomingVpnServer
-1) install a openvpn server. I recommend use a script like https://www.pivpn.io/
+1) install a openvpn server. (or wireguard) I recommend use a script like https://www.pivpn.io/
 2) copy the up.sh script to /etc/openvpn/
 3) edit the up script you your local ip settings
 4) apply
