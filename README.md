@@ -35,12 +35,13 @@ for this you require an VPN hosting using openvpn
 ```
 auth-user-pass /etc/openvpn/password.txt
 ```
-3) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
-4) copy /etc/rsyslog.d/openvpn.conf
-5) install a webserver
-6) copy the php site. !change the hardcoded username/password
-7) systemctl enable openvpn@client.conf
+2) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
+3) copy /etc/rsyslog.d/openvpn.conf
+4) install a webserver
+5) copy the php site. !change the hardcoded username/password
+6) systemctl enable openvpn@client.conf
 
+now vpnadmin should work. 
 
 
 # Setup incomingVpnServer
