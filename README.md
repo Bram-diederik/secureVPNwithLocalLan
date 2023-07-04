@@ -31,11 +31,16 @@ ip rule add to 10.8.0.0/24 table 11
 
 # Setup VpnGateway
 for this you require an VPN hosting using openvpn
-1) place working not asking for password openvpn configurations in the folder /etc/openvpn/clientConfig 
-2) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
-3) copy /etc/rsyslog.d/openvpn.conf
-4) install a webserver
-5) copy the php site. !change the hardcoded username/password
+1) place working not asking for password openvpn configurations in the folder /etc/openvpn/clientConfig
+```
+auth-user-pass /etc/openvpn/password.txt
+```
+3) install the vpnadmin.sh to /usr/bin/local and grant it passwordless sudo for the www-data user
+4) copy /etc/rsyslog.d/openvpn.conf
+5) install a webserver
+6) copy the php site. !change the hardcoded username/password
+7) systemctl enable openvpn@client.conf
+
 
 
 # Setup incomingVpnServer
