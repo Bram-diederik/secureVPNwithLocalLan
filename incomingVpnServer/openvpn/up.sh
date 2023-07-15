@@ -9,6 +9,7 @@ iptables -A FORWARD -i $TUN -j ACCEPT
 iptables -t nat -A POSTROUTING -o $IF -j MASQUERADE 
 
 ## Create seperate IP routing table for the TUN Interface
+## If your going to use ip-rule-swicher remove all ip rules in this script 
 ip rule add from 10.8.0.0/24 table 11
 ip rule add to 10.8.0.0/24 table 11
 ip route add 10.8.0.0/24 dev $TUN table 11
