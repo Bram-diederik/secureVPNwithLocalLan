@@ -46,9 +46,10 @@ now vpnadmin should work.
 
 # Setup incomingVpnServer
 1) install a openvpn server. (or wireguard) I recommend use a script like https://www.pivpn.io/
-2) copy the up.sh script to /etc/openvpn/
-3) edit the up script you your local ip settings
-4) apply
+Stop here if you want to use ip-switcher.
+3) copy the up.sh script to /etc/openvpn/
+4) edit the up script you your local ip settings
+5) apply
 ```
 script-security 3 
 up /etc/openvpn/up.sh
